@@ -1,6 +1,6 @@
-# Kathiravan V. — Personal Developer Portfolio
+# KATHIRAVAN V — Personal Developer Portfolio
 
-A modern, high-performance developer portfolio website designed for **KATHIRAVAN V.**, an aspiring Frontend Developer seeking junior frontend engineering roles and freelance clients.
+A modern, high-performance developer portfolio website designed for **KATHIRAVAN V**, an aspiring Frontend Developer seeking junior frontend engineering roles and freelance clients.
 
 Built with semantic **HTML5**, **CSS3**, and **Vanilla JavaScript** (zero heavy frameworks, zero runtime bloat).
 

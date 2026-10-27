@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * JAVASCRIPT INTERACTIONS — KATHIRAVAN V. PORTFOLIO
+ * JAVASCRIPT INTERACTIONS — KATHIRAVAN V PORTFOLIO
  * Features:
  * - Mobile navigation toggle & backdrop click handling
  * - Accessible drawer navigation with Escape key support
