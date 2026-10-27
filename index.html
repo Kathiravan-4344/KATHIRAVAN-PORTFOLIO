@@ -26,7 +26,7 @@
     />
     <meta property="og:url" content="https://kathiravan-portfolio.vercel.app" />
 
-    <!-- Favicon (SVG data URI for instant crisp display without external assets) -->
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/svg+xml"
@@ -45,66 +45,73 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Ambient Background Glow Elements -->
+    <!-- Zentra Grid Matrix & Ambient Background Glows -->
+    <div class="zentra-grid-bg" aria-hidden="true"></div>
     <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
     <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
     <div class="ambient-glow glow-center" aria-hidden="true"></div>
 
     <!-- ========================================================================= -->
-    <!-- A. NAVIGATION BAR -->
+    <!-- A. ZENTRA-STYLE FLOATING PILL NAVIGATION -->
     <!-- ========================================================================= -->
-    <header class="site-header" id="header">
-      <nav class="nav-container" aria-label="Main Navigation">
-        <!-- Personal Logo & Brand Name -->
-        <a href="#hero" class="brand-logo" aria-label="KATHIRAVAN V Home">
-          <span class="logo-symbol">K.</span>
-          <span class="brand-text">KATHIRAVAN V</span>
-        </a>
-
-        <!-- Desktop Navigation Menu -->
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-
-        <!-- Navigation Actions -->
-        <div class="nav-actions">
-          <a href="#contact" class="btn btn-nav-cta">
-            <span>Let's Talk</span>
-            <svg
-              class="icon icon-sm"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
+    <div class="nav-wrapper">
+      <header class="site-header" id="header">
+        <nav class="nav-container" aria-label="Main Navigation">
+          <!-- Personal Logo & Brand Name -->
+          <a href="#hero" class="brand-logo" aria-label="KATHIRAVAN V Home">
+            <span class="logo-symbol">
+              <span class="logo-dot-glow"></span>
+              K.
+            </span>
+            <span class="brand-text">KATHIRAVAN V</span>
           </a>
 
-          <!-- Mobile Menu Toggle Button -->
-          <button
-            type="button"
-            class="mobile-toggle"
-            id="mobileToggle"
-            aria-label="Toggle navigation menu"
-            aria-expanded="false"
-            aria-controls="mobileDrawer"
-          >
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+          <!-- Desktop Navigation Menu -->
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Integrations</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <!-- Navigation Actions -->
+          <div class="nav-actions">
+            <a href="#contact" class="btn btn-nav-cta">
+              <span class="pulse-radar-dot"></span>
+              <span>Let's Talk</span>
+              <svg
+                class="icon icon-sm"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button
+              type="button"
+              class="mobile-toggle"
+              id="mobileToggle"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="mobileDrawer"
+            >
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+    </div>
 
     <!-- Mobile Navigation Drawer Overlay -->
     <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
@@ -112,7 +119,7 @@
         <ul class="mobile-nav-list">
           <li><a href="#hero" class="mobile-nav-link">Home</a></li>
           <li><a href="#about" class="mobile-nav-link">About</a></li>
-          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Integrations</a></li>
           <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
           <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
         </ul>
@@ -173,7 +180,7 @@
     <!-- Main Content Landmark -->
     <main id="main-content">
       <!-- ======================================================================= -->
-      <!-- B. HERO SECTION -->
+      <!-- B. HERO SECTION (ZENTRA INTEGRATION AESTHETIC) -->
       <!-- ======================================================================= -->
       <section class="hero-section section-padding" id="hero">
         <div class="container hero-grid">
@@ -183,6 +190,7 @@
             <div class="status-badge">
               <span class="status-dot"></span>
               <span class="status-text">OPEN TO OPPORTUNITIES</span>
+              <span class="status-chip-sub">Ready to Build</span>
             </div>
 
             <!-- Main Heading -->
@@ -247,7 +255,7 @@
                 class="social-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Kathiravan GitHub profile"
+                aria-label="KATHIRAVAN V GitHub profile"
               >
                 <svg
                   class="icon"
@@ -292,89 +300,93 @@
             </div>
           </div>
 
-          <!-- Right Column: Developer-Themed Visual with Code Editor & Floating Badges -->
+          <!-- Right Column: Zentra Interactive Integration Hub & Code Visual -->
           <div class="hero-visual reveal" aria-hidden="true">
-            <div class="visual-wrapper">
-              <!-- Decorative Orbit Ring -->
-              <div class="orbit-glow"></div>
+            <div class="zentra-hub-wrapper">
+              <!-- Radial Radar Circles & Glowing Rays -->
+              <div class="radar-circle radar-outer"></div>
+              <div class="radar-circle radar-middle"></div>
+              <div class="radar-circle radar-inner"></div>
 
-              <!-- Code Editor Card -->
-              <div class="code-card">
-                <div class="card-header">
-                  <div class="window-dots">
-                    <span class="dot dot-close"></span>
-                    <span class="dot dot-minimize"></span>
-                    <span class="dot dot-maximize"></span>
+              <!-- SVG Animated Circuit Connection Beams -->
+              <svg
+                class="hub-connections-svg"
+                viewBox="0 0 500 500"
+                fill="none"
+              >
+                <!-- Center to Top Left (HTML5) -->
+                <line x1="250" y1="250" x2="80" y2="80" class="wire-base" />
+                <line
+                  x1="250"
+                  y1="250"
+                  x2="80"
+                  y2="80"
+                  class="wire-pulse wire-pulse-1"
+                />
+
+                <!-- Center to Top Right (CSS3) -->
+                <line x1="250" y1="250" x2="420" y2="80" class="wire-base" />
+                <line
+                  x1="250"
+                  y1="250"
+                  x2="420"
+                  y2="80"
+                  class="wire-pulse wire-pulse-2"
+                />
+
+                <!-- Center to Bottom Right (JavaScript) -->
+                <line x1="250" y1="250" x2="420" y2="420" class="wire-base" />
+                <line
+                  x1="250"
+                  y1="250"
+                  x2="420"
+                  y2="420"
+                  class="wire-pulse wire-pulse-3"
+                />
+
+                <!-- Center to Bottom Left (Responsive) -->
+                <line x1="250" y1="250" x2="80" y2="420" class="wire-base" />
+                <line
+                  x1="250"
+                  y1="250"
+                  x2="80"
+                  y2="420"
+                  class="wire-pulse wire-pulse-4"
+                />
+              </svg>
+
+              <!-- Central Node: Developer Core Engine -->
+              <div class="central-core-node">
+                <div class="core-node-inner">
+                  <div class="core-avatar">
+                    <span class="core-symbol">K.</span>
                   </div>
-                  <div class="file-tab">
-                    <svg
-                      class="icon icon-xs"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#6EABFF"
-                      stroke-width="2"
-                    >
-                      <polyline points="16 18 22 12 16 6"></polyline>
-                      <polyline points="8 6 2 12 8 18"></polyline>
-                    </svg>
-                    <span>Kathiravan.dev.js</span>
-                  </div>
-                  <div class="header-status">Frontend Dev</div>
+                  <span class="core-label">FRONTEND CORE</span>
+                  <span class="core-status">Active System</span>
                 </div>
-
-                <!-- Syntax-Highlighted Code Body -->
-                <div class="code-body">
-                  <pre><code><span class="c-dim">1</span> <span class="c-keyword">const</span> <span class="c-variable">developer</span> = {
-<span class="c-dim">2</span>   <span class="c-prop">name</span>: <span class="c-string">'KATHIRAVAN V'</span>,
-<span class="c-dim">3</span>   <span class="c-prop">role</span>: <span class="c-string">'Frontend Developer'</span>,
-<span class="c-dim">4</span>   <span class="c-prop">focus</span>: [<span class="c-string">'HTML5'</span>, <span class="c-string">'CSS3'</span>, <span class="c-string">'JavaScript'</span>],
-<span class="c-dim">5</span>   <span class="c-prop">openForWork</span>: <span class="c-boolean">true</span>,
-<span class="c-dim">6</span>   <span class="c-function">build</span>() {
-<span class="c-dim">7</span>     <span class="c-keyword">return</span> <span class="c-string">'Responsive, user-first web apps'</span>;
-<span class="c-dim">8</span>   }
-<span class="c-dim">9</span> };</code></pre>
-                </div>
-
-                <!-- Terminal Status Bar -->
-                <div class="code-footer">
-                  <span class="status-pill-small"
-                    ><span class="pulse-mini"></span> Ready to build</span
-                  >
-                  <span class="branch-label">
-                    <svg
-                      class="icon icon-xs"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <line x1="6" y1="3" x2="6" y2="15"></line>
-                      <circle cx="18" cy="6" r="3"></circle>
-                      <circle cx="6" cy="18" r="3"></circle>
-                      <path d="M18 9a9 9 0 0 1-9 9"></path>
-                    </svg>
-                    main
-                  </span>
-                </div>
+                <div class="core-glow-ring"></div>
               </div>
 
-              <!-- Floating Tech Badges around Editor -->
-              <div class="floating-badge badge-top-left float-slow">
-                <span class="tech-icon-circle icon-html">
+              <!-- Satellite Integration Nodes (Zentra Style) -->
+              <!-- 1. HTML5 Node -->
+              <div class="node-chip chip-top-left float-slow">
+                <div class="node-icon icon-html">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
                       d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 2.18l7 2.33v4.49c0 4.54-3.04 8.79-7 9.92-3.96-1.13-7-5.38-7-9.92V6.51l7-2.33z"
                     />
                   </svg>
-                </span>
-                <div class="badge-text">
-                  <span class="badge-title">HTML5 Semantic</span>
-                  <span class="badge-sub">Accessible UI</span>
                 </div>
+                <div class="node-details">
+                  <span class="node-title">HTML5 Semantic</span>
+                  <span class="node-tag">Accessible DOM</span>
+                </div>
+                <span class="node-status-dot"></span>
               </div>
 
-              <div class="floating-badge badge-top-right float-delay-1">
-                <span class="tech-icon-circle icon-css">
+              <!-- 2. CSS3 Node -->
+              <div class="node-chip chip-top-right float-delay-1">
+                <div class="node-icon icon-css">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -385,25 +397,29 @@
                     <path d="M8 9h8"></path>
                     <path d="M8 13h7l-.5 4-2.5 1-2.5-1-.2-2"></path>
                   </svg>
-                </span>
-                <div class="badge-text">
-                  <span class="badge-title">CSS3 Modern</span>
-                  <span class="badge-sub">Flexbox & Grid</span>
                 </div>
+                <div class="node-details">
+                  <span class="node-title">CSS3 Modern</span>
+                  <span class="node-tag">Flexbox & Grid</span>
+                </div>
+                <span class="node-status-dot"></span>
               </div>
 
-              <div class="floating-badge badge-bottom-right float-delay-2">
-                <span class="tech-icon-circle icon-js">
+              <!-- 3. JavaScript Node -->
+              <div class="node-chip chip-bottom-right float-delay-2">
+                <div class="node-icon icon-js">
                   <span class="js-text">JS</span>
-                </span>
-                <div class="badge-text">
-                  <span class="badge-title">Vanilla JS</span>
-                  <span class="badge-sub">DOM & Interactions</span>
                 </div>
+                <div class="node-details">
+                  <span class="node-title">Vanilla JS</span>
+                  <span class="node-tag">DOM Logic</span>
+                </div>
+                <span class="node-status-dot pulse-js"></span>
               </div>
 
-              <div class="floating-badge badge-bottom-left float-delay-3">
-                <span class="tech-icon-circle icon-resp">
+              <!-- 4. Responsive Design Node -->
+              <div class="node-chip chip-bottom-left float-delay-3">
+                <div class="node-icon icon-resp">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -420,10 +436,31 @@
                     ></rect>
                     <line x1="12" y1="18" x2="12.01" y2="18"></line>
                   </svg>
-                </span>
-                <div class="badge-text">
-                  <span class="badge-title">Responsive Design</span>
-                  <span class="badge-sub">Mobile to Desktop</span>
+                </div>
+                <div class="node-details">
+                  <span class="node-title">Responsive UI</span>
+                  <span class="node-tag">Fluid Layouts</span>
+                </div>
+                <span class="node-status-dot"></span>
+              </div>
+
+              <!-- Floating Micro-Code Snippet Card -->
+              <div class="floating-code-preview">
+                <div class="mini-card-head">
+                  <span class="mini-dot r"></span>
+                  <span class="mini-dot y"></span>
+                  <span class="mini-dot g"></span>
+                  <span class="mini-title">kathiravan.dev.js</span>
+                </div>
+                <div class="mini-code-body">
+                  <code
+                    ><span class="c-k">const</span>
+                    <span class="c-v">dev</span> = {
+                    <span class="c-p">name</span>:
+                    <span class="c-s">'KATHIRAVAN V'</span>,
+                    <span class="c-p">status</span>:
+                    <span class="c-b">'Ready to Build'</span> };</code
+                  >
                 </div>
               </div>
             </div>
@@ -432,7 +469,7 @@
       </section>
 
       <!-- ======================================================================= -->
-      <!-- C. ABOUT ME SECTION -->
+      <!-- C. ABOUT ME SECTION (ZENTRA MODULAR CARDS) -->
       <!-- ======================================================================= -->
       <section class="section-padding bg-secondary" id="about">
         <div class="container">
@@ -600,13 +637,13 @@
       </section>
 
       <!-- ======================================================================= -->
-      <!-- D. SKILLS SECTION -->
+      <!-- D. SKILLS & INTEGRATIONS (ZENTRA BENTO INTEGRATION SUITE) -->
       <!-- ======================================================================= -->
       <section class="section-padding" id="skills">
         <div class="container">
           <div class="section-header text-center reveal">
-            <span class="section-badge">TECHNICAL EXPERTISE</span>
-            <h2 class="section-heading">My Skills & Focus Areas</h2>
+            <span class="section-badge">INTEGRATION SUITE</span>
+            <h2 class="section-heading">Skills & Technology Integrations</h2>
             <p class="section-subheading">
               An honest representation of my current technical foundation and
               active areas of growth.
@@ -614,9 +651,25 @@
             <div class="section-divider"></div>
           </div>
 
+          <!-- Zentra Category Tabs -->
+          <div class="integration-tabs reveal">
+            <button type="button" class="tab-btn active" data-filter="all">
+              All Integrations
+            </button>
+            <button type="button" class="tab-btn" data-filter="core">
+              Core Web
+            </button>
+            <button type="button" class="tab-btn" data-filter="styling">
+              Styling & UI
+            </button>
+            <button type="button" class="tab-btn" data-filter="tools">
+              Workflow & Tools
+            </button>
+          </div>
+
           <div class="skills-grid">
             <!-- Skill Card 1: HTML5 -->
-            <div class="skill-card reveal">
+            <div class="skill-card reveal" data-category="core">
               <div class="skill-card-top">
                 <div class="skill-icon-wrapper html-theme">
                   <svg
@@ -649,10 +702,17 @@
                 <li><span>✓</span> Accessibility & screen reader support</li>
                 <li><span>✓</span> Forms, validation & input controls</li>
               </ul>
+
+              <div class="skill-footer-meta">
+                <span class="integration-status"
+                  ><span class="dot-live"></span> Active Node</span
+                >
+                <span class="meta-speed">100% Native</span>
+              </div>
             </div>
 
             <!-- Skill Card 2: CSS3 -->
-            <div class="skill-card reveal">
+            <div class="skill-card reveal" data-category="styling">
               <div class="skill-card-top">
                 <div class="skill-icon-wrapper css-theme">
                   <svg
@@ -695,10 +755,17 @@
                   <span>✓</span> Transitions, micro-interactions & variables
                 </li>
               </ul>
+
+              <div class="skill-footer-meta">
+                <span class="integration-status"
+                  ><span class="dot-live"></span> Active Node</span
+                >
+                <span class="meta-speed">Zero Bloat</span>
+              </div>
             </div>
 
             <!-- Skill Card 3: JavaScript -->
-            <div class="skill-card reveal">
+            <div class="skill-card reveal" data-category="core">
               <div class="skill-card-top">
                 <div class="skill-icon-wrapper js-theme">
                   <svg
@@ -735,10 +802,17 @@
                   ES6+
                 </li>
               </ul>
+
+              <div class="skill-footer-meta">
+                <span class="integration-status"
+                  ><span class="dot-pulse-amber"></span> Leveling Up</span
+                >
+                <span class="meta-speed">ES6+ Standard</span>
+              </div>
             </div>
 
             <!-- Skill Card 4: Git & GitHub -->
-            <div class="skill-card reveal">
+            <div class="skill-card reveal" data-category="tools">
               <div class="skill-card-top">
                 <div class="skill-icon-wrapper git-theme">
                   <svg
@@ -773,20 +847,27 @@
                 <li><span>✓</span> GitHub repository hosting & versioning</li>
                 <li><span>✓</span> Deployment workflows (e.g., Vercel)</li>
               </ul>
+
+              <div class="skill-footer-meta">
+                <span class="integration-status"
+                  ><span class="dot-live"></span> Synced</span
+                >
+                <span class="meta-speed">CI/CD Ready</span>
+              </div>
             </div>
           </div>
 
           <!-- Additional Supporting Tools Bar -->
           <div class="tools-bar reveal">
             <span class="tools-bar-label"
-              >Working Workflow & Environments:</span
+              >Connected Tooling & Environments:</span
             >
             <div class="tool-tags">
               <span class="tool-tag">VS Code</span>
               <span class="tool-tag">Chrome DevTools</span>
-              <span class="tool-tag">Responsive Design Testing</span>
-              <span class="tool-tag">Vercel Deployment</span>
-              <span class="tool-tag">Clean Code Practices</span>
+              <span class="tool-tag">Responsive Viewports</span>
+              <span class="tool-tag">Vercel Cloud</span>
+              <span class="tool-tag">Clean Architecture</span>
             </div>
           </div>
         </div>
@@ -1126,7 +1207,7 @@
                     <div class="contact-button-group">
                       <!-- mailto link with pre-filled subject as requested -->
                       <a
-                        href="mailto:kathiravan.developer@example.com?subject=Frontend%20Project%20Inquiry%20-%20Kathiravan%20V."
+                        href="mailto:kathiravan.developer@example.com?subject=Frontend%20Project%20Inquiry%20-%20KATHIRAVAN%20V"
                         class="btn btn-primary"
                         id="emailMeBtn"
                       >
@@ -1293,7 +1374,7 @@
           <ul class="footer-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Integrations</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

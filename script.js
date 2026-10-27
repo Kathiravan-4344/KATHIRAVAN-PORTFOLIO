@@ -324,13 +324,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  document.addEventListener("keydown", (e) => {
-    if (
-      e.key === "Escape" &&
-      previewModal &&
-      previewModal.classList.contains("open")
-    ) {
-      closeModal();
-    }
+  /* --------------------------------------------------------------------------
+     10. ZENTRA INTEGRATION TABS FILTERING
+     -------------------------------------------------------------------------- */
+  const tabButtons = document.querySelectorAll(".integration-tabs .tab-btn");
+  const skillCards = document.querySelectorAll(".skills-grid .skill-card");
+
+  tabButtons.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabButtons.forEach((btn) => btn.classList.remove("active"));
+      tab.classList.add("active");
+
+      const filterValue = tab.getAttribute("data-filter");
+
+      skillCards.forEach((card) => {
+        const category = card.getAttribute("data-category");
+        if (filterValue === "all" || category === filterValue) {
+          card.style.display = "flex";
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
   });
 });
