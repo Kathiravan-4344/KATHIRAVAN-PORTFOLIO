@@ -1,201 +1,330 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <!-- SEO & Social Meta Tags -->
-  <title>Kathiravan V. | Frontend Developer Portfolio</title>
-  <meta name="description" content="Personal portfolio of Kathiravan V., an aspiring Frontend Developer specializing in clean, responsive HTML, CSS, and modern JavaScript web experiences. Open to junior roles and freelance projects.">
-  <meta name="keywords" content="Kathiravan V, Frontend Developer, Web Developer, Portfolio, HTML5, CSS3, JavaScript, Responsive Web Design">
-  <meta name="author" content="Kathiravan V.">
-  
-  <!-- Open Graph / Meta -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Kathiravan V. | Frontend Developer">
-  <meta property="og:description" content="Explore projects and frontend work by Kathiravan V. Clean code, modern UI, and responsive web design.">
-  <meta property="og:url" content="https://kathiravan-portfolio.vercel.app">
-  
-  <!-- Favicon (SVG data URI for instant crisp display without external assets) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23080D18'/><rect x='4' y='4' width='92' height='92' rx='20' fill='%23101A2B' stroke='%234D8DFF' stroke-width='4'/><text x='50%' y='68%' font-family='sans-serif' font-weight='900' font-size='56' fill='%234D8DFF' text-anchor='middle'>K.</text></svg>">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- Google Fonts: Space Grotesk (Headings) & DM Sans (Body) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- SEO & Social Meta Tags -->
+    <title>Kathiravan V. | Frontend Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Kathiravan V., an aspiring Frontend Developer specializing in clean, responsive HTML, CSS, and modern JavaScript web experiences. Open to junior roles and freelance projects."
+    />
+    <meta
+      name="keywords"
+      content="Kathiravan V, Frontend Developer, Web Developer, Portfolio, HTML5, CSS3, JavaScript, Responsive Web Design"
+    />
+    <meta name="author" content="Kathiravan V." />
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kathiravan V. | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Explore projects and frontend work by Kathiravan V. Clean code, modern UI, and responsive web design."
+    />
+    <meta property="og:url" content="https://kathiravan-portfolio.vercel.app" />
 
-  <!-- Ambient Background Glow Elements -->
-  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
-  <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
-  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+    <!-- Favicon (SVG data URI for instant crisp display without external assets) -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23080D18'/><rect x='4' y='4' width='92' height='92' rx='20' fill='%23101A2B' stroke='%234D8DFF' stroke-width='4'/><text x='50%' y='68%' font-family='sans-serif' font-weight='900' font-size='56' fill='%234D8DFF' text-anchor='middle'>K.</text></svg>"
+    />
 
-  <!-- ========================================================================= -->
-  <!-- A. NAVIGATION BAR -->
-  <!-- ========================================================================= -->
-  <header class="site-header" id="header">
-    <nav class="nav-container" aria-label="Main Navigation">
-      <!-- Personal Logo & Brand Name -->
-      <a href="#hero" class="brand-logo" aria-label="Kathiravan V. Home">
-        <span class="logo-symbol">K.</span>
-        <span class="brand-text">KATHIRAVAN V.</span>
-      </a>
+    <!-- Google Fonts: Space Grotesk (Headings) & DM Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-      <!-- Desktop Navigation Menu -->
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient Background Glow Elements -->
+    <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+    <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
+    <div class="ambient-glow glow-center" aria-hidden="true"></div>
 
-      <!-- Navigation Actions -->
-      <div class="nav-actions">
-        <a href="#contact" class="btn btn-nav-cta">
-          <span>Let's Talk</span>
-          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
+    <!-- ========================================================================= -->
+    <!-- A. NAVIGATION BAR -->
+    <!-- ========================================================================= -->
+    <header class="site-header" id="header">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <!-- Personal Logo & Brand Name -->
+        <a href="#hero" class="brand-logo" aria-label="Kathiravan V. Home">
+          <span class="logo-symbol">K.</span>
+          <span class="brand-text">KATHIRAVAN V.</span>
         </a>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-        </button>
-      </div>
-    </nav>
-  </header>
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-  <!-- Mobile Navigation Drawer Overlay -->
-  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
-    <div class="drawer-content">
-      <ul class="mobile-nav-list">
-        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
-        <li><a href="#about" class="mobile-nav-link">About</a></li>
-        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
-        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
-        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-      </ul>
-      <div class="mobile-drawer-footer">
-        <a href="#contact" class="btn btn-primary btn-block mobile-cta">Let's Talk</a>
-        <div class="mobile-socials">
-          <a href="https://github.com/Kathiravan-4344" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-nav-cta">
+            <span>Let's Talk</span>
+            <svg
+              class="icon icon-sm"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
           </a>
-          <!-- USER NOTE: Replace with your actual LinkedIn profile URL -->
-          <a href="https://www.linkedin.com/in/kathiravan-v" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button
+            type="button"
+            class="mobile-toggle"
+            id="mobileToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileDrawer"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+      </nav>
+    </header>
 
-  <!-- Main Content Landmark -->
-  <main id="main-content">
-
-    <!-- ======================================================================= -->
-    <!-- B. HERO SECTION -->
-    <!-- ======================================================================= -->
-    <section class="hero-section section-padding" id="hero">
-      <div class="container hero-grid">
-        
-        <!-- Left Column: Hero Introduction & Actions -->
-        <div class="hero-content reveal">
-          <!-- Availability Badge -->
-          <div class="status-badge">
-            <span class="status-dot"></span>
-            <span class="status-text">OPEN TO OPPORTUNITIES</span>
-          </div>
-
-          <!-- Main Heading -->
-          <h1 class="hero-heading">
-            Hi, I'm <span class="gradient-text">Kathiravan V.</span>
-          </h1>
-
-          <!-- Professional Title -->
-          <p class="hero-title">
-            Frontend Developer <span class="title-divider">|</span> Building for the Web
-          </p>
-
-          <!-- Introduction Text -->
-          <p class="hero-intro">
-            I build modern, responsive websites that look great, feel intuitive, and work across devices. I'm continuously improving my skills by building practical projects.
-          </p>
-
-          <!-- Action Buttons -->
-          <div class="hero-cta-group">
-            <a href="#projects" class="btn btn-primary">
-              <span>Explore My Work</span>
-              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="#contact" class="btn btn-primary btn-block mobile-cta"
+            >Let's Talk</a
+          >
+          <div class="mobile-socials">
+            <a
+              href="https://github.com/Kathiravan-4344"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
               </svg>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span>Hire Me</span>
-              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Social Links -->
-          <div class="hero-socials">
-            <span class="social-label">Connect:</span>
-            <a href="https://github.com/Kathiravan-4344" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Kathiravan GitHub profile">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-              <span>GitHub</span>
             </a>
             <!-- USER NOTE: Replace with your actual LinkedIn profile URL -->
-            <a href="https://www.linkedin.com/in/kathiravan-v" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Kathiravan LinkedIn profile">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <a
+              href="https://www.linkedin.com/in/kathiravan-v"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
                 <rect x="2" y="9" width="4" height="12"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
-              <span>LinkedIn</span>
             </a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
 
-        <!-- Right Column: Developer-Themed Visual with Code Editor & Floating Badges -->
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="visual-wrapper">
-            <!-- Decorative Orbit Ring -->
-            <div class="orbit-glow"></div>
-            
-            <!-- Code Editor Card -->
-            <div class="code-card">
-              <div class="card-header">
-                <div class="window-dots">
-                  <span class="dot dot-close"></span>
-                  <span class="dot dot-minimize"></span>
-                  <span class="dot dot-maximize"></span>
-                </div>
-                <div class="file-tab">
-                  <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="#6EABFF" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                  <span>Kathiravan.dev.js</span>
-                </div>
-                <div class="header-status">Frontend Dev</div>
-              </div>
+    <!-- Main Content Landmark -->
+    <main id="main-content">
+      <!-- ======================================================================= -->
+      <!-- B. HERO SECTION -->
+      <!-- ======================================================================= -->
+      <section class="hero-section section-padding" id="hero">
+        <div class="container hero-grid">
+          <!-- Left Column: Hero Introduction & Actions -->
+          <div class="hero-content reveal">
+            <!-- Availability Badge -->
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span class="status-text">OPEN TO OPPORTUNITIES</span>
+            </div>
 
-              <!-- Syntax-Highlighted Code Body -->
-              <div class="code-body">
-                <pre><code><span class="c-dim">1</span> <span class="c-keyword">const</span> <span class="c-variable">developer</span> = {
+            <!-- Main Heading -->
+            <h1 class="hero-heading">
+              Hi, I'm <span class="gradient-text">Kathiravan V.</span>
+            </h1>
+
+            <!-- Professional Title -->
+            <p class="hero-title">
+              Frontend Developer <span class="title-divider">|</span> Building
+              for the Web
+            </p>
+
+            <!-- Introduction Text -->
+            <p class="hero-intro">
+              I build modern, responsive websites that look great, feel
+              intuitive, and work across devices. I'm continuously improving my
+              skills by building practical projects.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore My Work</span>
+                <svg
+                  class="icon icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Hire Me</span>
+                <svg
+                  class="icon icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+              <span class="social-label">Connect:</span>
+              <a
+                href="https://github.com/Kathiravan-4344"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kathiravan GitHub profile"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <!-- USER NOTE: Replace with your actual LinkedIn profile URL -->
+              <a
+                href="https://www.linkedin.com/in/kathiravan-v"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kathiravan LinkedIn profile"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Developer-Themed Visual with Code Editor & Floating Badges -->
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="visual-wrapper">
+              <!-- Decorative Orbit Ring -->
+              <div class="orbit-glow"></div>
+
+              <!-- Code Editor Card -->
+              <div class="code-card">
+                <div class="card-header">
+                  <div class="window-dots">
+                    <span class="dot dot-close"></span>
+                    <span class="dot dot-minimize"></span>
+                    <span class="dot dot-maximize"></span>
+                  </div>
+                  <div class="file-tab">
+                    <svg
+                      class="icon icon-xs"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#6EABFF"
+                      stroke-width="2"
+                    >
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>Kathiravan.dev.js</span>
+                  </div>
+                  <div class="header-status">Frontend Dev</div>
+                </div>
+
+                <!-- Syntax-Highlighted Code Body -->
+                <div class="code-body">
+                  <pre><code><span class="c-dim">1</span> <span class="c-keyword">const</span> <span class="c-variable">developer</span> = {
 <span class="c-dim">2</span>   <span class="c-prop">name</span>: <span class="c-string">'Kathiravan V.'</span>,
 <span class="c-dim">3</span>   <span class="c-prop">role</span>: <span class="c-string">'Frontend Developer'</span>,
 <span class="c-dim">4</span>   <span class="c-prop">focus</span>: [<span class="c-string">'HTML5'</span>, <span class="c-string">'CSS3'</span>, <span class="c-string">'JavaScript'</span>],
@@ -204,678 +333,1109 @@
 <span class="c-dim">7</span>     <span class="c-keyword">return</span> <span class="c-string">'Responsive, user-first web apps'</span>;
 <span class="c-dim">8</span>   }
 <span class="c-dim">9</span> };</code></pre>
-              </div>
-
-              <!-- Terminal Status Bar -->
-              <div class="code-footer">
-                <span class="status-pill-small"><span class="pulse-mini"></span> Ready to build</span>
-                <span class="branch-label">
-                  <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
-                  main
-                </span>
-              </div>
-            </div>
-
-            <!-- Floating Tech Badges around Editor -->
-            <div class="floating-badge badge-top-left float-slow">
-              <span class="tech-icon-circle icon-html">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 2.18l7 2.33v4.49c0 4.54-3.04 8.79-7 9.92-3.96-1.13-7-5.38-7-9.92V6.51l7-2.33z"/></svg>
-              </span>
-              <div class="badge-text">
-                <span class="badge-title">HTML5 Semantic</span>
-                <span class="badge-sub">Accessible UI</span>
-              </div>
-            </div>
-
-            <div class="floating-badge badge-top-right float-delay-1">
-              <span class="tech-icon-circle icon-css">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3-2 14-6 3-6-3L4 5l8-3z"></path><path d="M8 9h8"></path><path d="M8 13h7l-.5 4-2.5 1-2.5-1-.2-2"></path></svg>
-              </span>
-              <div class="badge-text">
-                <span class="badge-title">CSS3 Modern</span>
-                <span class="badge-sub">Flexbox & Grid</span>
-              </div>
-            </div>
-
-            <div class="floating-badge badge-bottom-right float-delay-2">
-              <span class="tech-icon-circle icon-js">
-                <span class="js-text">JS</span>
-              </span>
-              <div class="badge-text">
-                <span class="badge-title">Vanilla JS</span>
-                <span class="badge-sub">DOM & Interactions</span>
-              </div>
-            </div>
-
-            <div class="floating-badge badge-bottom-left float-delay-3">
-              <span class="tech-icon-circle icon-resp">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-              </span>
-              <div class="badge-text">
-                <span class="badge-title">Responsive Design</span>
-                <span class="badge-sub">Mobile to Desktop</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================================= -->
-    <!-- C. ABOUT ME SECTION -->
-    <!-- ======================================================================= -->
-    <section class="section-padding bg-secondary" id="about">
-      <div class="container">
-        
-        <div class="section-header text-center reveal">
-          <span class="section-badge">ABOUT ME</span>
-          <h2 class="section-heading">Building for the Real World.</h2>
-          <div class="section-divider"></div>
-        </div>
-
-        <div class="about-grid">
-          <!-- Left: Narrative Text -->
-          <div class="about-narrative reveal">
-            <p class="narrative-lead">
-              I'm an aspiring frontend developer with a good foundation in HTML and CSS. I enjoy creating clean interfaces, responsive layouts, and user-friendly websites. I'm continuing to strengthen my JavaScript skills through hands-on projects.
-            </p>
-            <p class="narrative-body">
-              I'm looking for junior frontend developer opportunities and freelance projects where I can apply my skills, solve real problems, and continue learning.
-            </p>
-
-            <div class="about-meta-box">
-              <div class="meta-item">
-                <span class="meta-label">Primary Goal</span>
-                <span class="meta-value">Junior Frontend Roles & Freelance Web Projects</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Location / Availability</span>
-                <span class="meta-value">Remote & Onsite / Open to Collaboration</span>
-              </div>
-            </div>
-
-            <div class="about-cta">
-              <a href="#projects" class="btn btn-outline">
-                <span>View My Work</span>
-                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right: Four Compact Information Cards -->
-          <div class="about-cards-grid">
-            
-            <!-- Card 1: Curious Mindset -->
-            <div class="info-card reveal">
-              <div class="info-card-icon">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-              </div>
-              <h3 class="info-card-title">Curious Mindset</h3>
-              <p class="info-card-desc">
-                Passionate about unpacking how things work under the hood, exploring web standards, and finding clean, elegant solutions for design challenges.
-              </p>
-            </div>
-
-            <!-- Card 2: Responsive Design -->
-            <div class="info-card reveal">
-              <div class="info-card-icon">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-              <h3 class="info-card-title">Responsive Design</h3>
-              <p class="info-card-desc">
-                Crafting fluid interfaces using modern CSS Flexbox and Grid that scale effortlessly from compact mobile viewports to wide desktop monitors.
-              </p>
-            </div>
-
-            <!-- Card 3: Practical Projects -->
-            <div class="info-card reveal">
-              <div class="info-card-icon">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <h3 class="info-card-title">Practical Projects</h3>
-              <p class="info-card-desc">
-                Prioritizing real, tangible builds over passive tutorials. Writing real code, testing user flows, and deploying to public URLs you can inspect.
-              </p>
-            </div>
-
-            <!-- Card 4: Continuous Learning -->
-            <div class="info-card reveal">
-              <div class="info-card-icon">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                </svg>
-              </div>
-              <h3 class="info-card-title">Continuous Learning</h3>
-              <p class="info-card-desc">
-                Dedicated daily habits of code practice, documentation review, and leveling up in JavaScript ES6+, asynchronous patterns, and frontend best practices.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================================= -->
-    <!-- D. SKILLS SECTION -->
-    <!-- ======================================================================= -->
-    <section class="section-padding" id="skills">
-      <div class="container">
-        
-        <div class="section-header text-center reveal">
-          <span class="section-badge">TECHNICAL EXPERTISE</span>
-          <h2 class="section-heading">My Skills & Focus Areas</h2>
-          <p class="section-subheading">
-            An honest representation of my current technical foundation and active areas of growth.
-          </p>
-          <div class="section-divider"></div>
-        </div>
-
-        <div class="skills-grid">
-          
-          <!-- Skill Card 1: HTML5 -->
-          <div class="skill-card reveal">
-            <div class="skill-card-top">
-              <div class="skill-icon-wrapper html-theme">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <span class="skill-level-badge level-core">Core Foundation</span>
-            </div>
-            
-            <h3 class="skill-name">HTML5</h3>
-            <p class="skill-description">
-              Semantic structure and accessible content. Clean document outlines, proper landmark elements, accessible forms, and SEO-friendly markup.
-            </p>
-
-            <ul class="skill-highlights">
-              <li><span>✓</span> Semantic tags & DOM hierarchy</li>
-              <li><span>✓</span> Accessibility & screen reader support</li>
-              <li><span>✓</span> Forms, validation & input controls</li>
-            </ul>
-          </div>
-
-          <!-- Skill Card 2: CSS3 -->
-          <div class="skill-card reveal">
-            <div class="skill-card-top">
-              <div class="skill-icon-wrapper css-theme">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="3" y1="9" x2="21" y2="9"></line>
-                  <line x1="9" y1="21" x2="9" y2="9"></line>
-                </svg>
-              </div>
-              <span class="skill-level-badge level-core">Core Foundation</span>
-            </div>
-            
-            <h3 class="skill-name">CSS3</h3>
-            <p class="skill-description">
-              Flexbox, Grid, responsive layouts, and animations. Custom properties, smooth transitions, mobile-first design, and modern dark UI aesthetics.
-            </p>
-
-            <ul class="skill-highlights">
-              <li><span>✓</span> CSS Flexbox & CSS Grid systems</li>
-              <li><span>✓</span> Responsive media queries & fluid units</li>
-              <li><span>✓</span> Transitions, micro-interactions & variables</li>
-            </ul>
-          </div>
-
-          <!-- Skill Card 3: JavaScript -->
-          <div class="skill-card reveal">
-            <div class="skill-card-top">
-              <div class="skill-icon-wrapper js-theme">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                </svg>
-              </div>
-              <span class="skill-level-badge level-learning">
-                <span class="pulse-dot-inline"></span> Actively Strengthening
-              </span>
-            </div>
-            
-            <h3 class="skill-name">JavaScript</h3>
-            <p class="skill-description">
-              DOM manipulation and interactive interfaces. Event handling, asynchronous operations, array methods, and building dynamic browser functionality.
-            </p>
-
-            <ul class="skill-highlights">
-              <li><span>✓</span> DOM traversal, selection & mutation</li>
-              <li><span>✓</span> Event listeners, state toggles & logic</li>
-              <li><span>⚡</span> Currently diving deeper into async/fetch & ES6+</li>
-            </ul>
-          </div>
-
-          <!-- Skill Card 4: Git & GitHub -->
-          <div class="skill-card reveal">
-            <div class="skill-card-top">
-              <div class="skill-icon-wrapper git-theme">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="6" y1="3" x2="6" y2="15"></line>
-                  <circle cx="18" cy="6" r="3"></circle>
-                  <circle cx="6" cy="18" r="3"></circle>
-                  <path d="M18 9a9 9 0 0 1-9 9"></path>
-                </svg>
-              </div>
-              <span class="skill-level-badge level-core">Workflow & Tools</span>
-            </div>
-            
-            <h3 class="skill-name">Git & GitHub</h3>
-            <p class="skill-description">
-              Version control and project collaboration. Tracking changes, managing commits, branching, repository management, and deploying through Git.
-            </p>
-
-            <ul class="skill-highlights">
-              <li><span>✓</span> Git commands (add, commit, push, pull)</li>
-              <li><span>✓</span> GitHub repository hosting & versioning</li>
-              <li><span>✓</span> Deployment workflows (e.g., Vercel)</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <!-- Additional Supporting Tools Bar -->
-        <div class="tools-bar reveal">
-          <span class="tools-bar-label">Working Workflow & Environments:</span>
-          <div class="tool-tags">
-            <span class="tool-tag">VS Code</span>
-            <span class="tool-tag">Chrome DevTools</span>
-            <span class="tool-tag">Responsive Design Testing</span>
-            <span class="tool-tag">Vercel Deployment</span>
-            <span class="tool-tag">Clean Code Practices</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================================= -->
-    <!-- E. FEATURED PROJECTS -->
-    <!-- ======================================================================= -->
-    <section class="section-padding bg-secondary" id="projects">
-      <div class="container">
-        
-        <div class="section-header text-center reveal">
-          <span class="section-badge">PORTFOLIO</span>
-          <h2 class="section-heading">Featured Projects</h2>
-          <p class="section-subheading">
-            Practical web projects demonstrating responsive layout skills, user interfaces, and clean code.
-          </p>
-          <div class="section-divider"></div>
-        </div>
-
-        <div class="projects-grid">
-          
-          <!-- Project 1: STB RECHARGE -->
-          <article class="project-card reveal" aria-labelledby="proj1-title">
-            <div class="project-preview">
-              <!-- Interactive Mockup Browser Frame -->
-              <div class="browser-frame">
-                <div class="browser-header">
-                  <div class="browser-dots">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="browser-url">
-                    <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                    <span>stb-recharge-frontend.vercel.app</span>
-                  </div>
                 </div>
 
-                <!-- Custom Styled CSS Preview of STB Recharge Portal -->
-                <div class="browser-viewport stb-theme-bg">
-                  <div class="mockup-content">
-                    <div class="mockup-nav">
-                      <span class="mock-brand">STB Recharge Hub</span>
-                      <span class="mock-status">Live Preview</span>
+                <!-- Terminal Status Bar -->
+                <div class="code-footer">
+                  <span class="status-pill-small"
+                    ><span class="pulse-mini"></span> Ready to build</span
+                  >
+                  <span class="branch-label">
+                    <svg
+                      class="icon icon-xs"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="6" y1="3" x2="6" y2="15"></line>
+                      <circle cx="18" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M18 9a9 9 0 0 1-9 9"></path>
+                    </svg>
+                    main
+                  </span>
+                </div>
+              </div>
+
+              <!-- Floating Tech Badges around Editor -->
+              <div class="floating-badge badge-top-left float-slow">
+                <span class="tech-icon-circle icon-html">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 2.18l7 2.33v4.49c0 4.54-3.04 8.79-7 9.92-3.96-1.13-7-5.38-7-9.92V6.51l7-2.33z"
+                    />
+                  </svg>
+                </span>
+                <div class="badge-text">
+                  <span class="badge-title">HTML5 Semantic</span>
+                  <span class="badge-sub">Accessible UI</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-top-right float-delay-1">
+                <span class="tech-icon-circle icon-css">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 2l8 3-2 14-6 3-6-3L4 5l8-3z"></path>
+                    <path d="M8 9h8"></path>
+                    <path d="M8 13h7l-.5 4-2.5 1-2.5-1-.2-2"></path>
+                  </svg>
+                </span>
+                <div class="badge-text">
+                  <span class="badge-title">CSS3 Modern</span>
+                  <span class="badge-sub">Flexbox & Grid</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-right float-delay-2">
+                <span class="tech-icon-circle icon-js">
+                  <span class="js-text">JS</span>
+                </span>
+                <div class="badge-text">
+                  <span class="badge-title">Vanilla JS</span>
+                  <span class="badge-sub">DOM & Interactions</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left float-delay-3">
+                <span class="tech-icon-circle icon-resp">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="5"
+                      y="2"
+                      width="14"
+                      height="20"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </span>
+                <div class="badge-text">
+                  <span class="badge-title">Responsive Design</span>
+                  <span class="badge-sub">Mobile to Desktop</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================= -->
+      <!-- C. ABOUT ME SECTION -->
+      <!-- ======================================================================= -->
+      <section class="section-padding bg-secondary" id="about">
+        <div class="container">
+          <div class="section-header text-center reveal">
+            <span class="section-badge">ABOUT ME</span>
+            <h2 class="section-heading">Building for the Real World.</h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="about-grid">
+            <!-- Left: Narrative Text -->
+            <div class="about-narrative reveal">
+              <p class="narrative-lead">
+                I'm an aspiring frontend developer with a good foundation in
+                HTML and CSS. I enjoy creating clean interfaces, responsive
+                layouts, and user-friendly websites. I'm continuing to
+                strengthen my JavaScript skills through hands-on projects.
+              </p>
+              <p class="narrative-body">
+                I'm looking for junior frontend developer opportunities and
+                freelance projects where I can apply my skills, solve real
+                problems, and continue learning.
+              </p>
+
+              <div class="about-meta-box">
+                <div class="meta-item">
+                  <span class="meta-label">Primary Goal</span>
+                  <span class="meta-value"
+                    >Junior Frontend Roles & Freelance Web Projects</span
+                  >
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Location / Availability</span>
+                  <span class="meta-value"
+                    >Remote & Onsite / Open to Collaboration</span
+                  >
+                </div>
+              </div>
+
+              <div class="about-cta">
+                <a href="#projects" class="btn btn-outline">
+                  <span>View My Work</span>
+                  <svg
+                    class="icon icon-sm"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Four Compact Information Cards -->
+            <div class="about-cards-grid">
+              <!-- Card 1: Curious Mindset -->
+              <div class="info-card reveal">
+                <div class="info-card-icon">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </div>
+                <h3 class="info-card-title">Curious Mindset</h3>
+                <p class="info-card-desc">
+                  Passionate about unpacking how things work under the hood,
+                  exploring web standards, and finding clean, elegant solutions
+                  for design challenges.
+                </p>
+              </div>
+
+              <!-- Card 2: Responsive Design -->
+              <div class="info-card reveal">
+                <div class="info-card-icon">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 class="info-card-title">Responsive Design</h3>
+                <p class="info-card-desc">
+                  Crafting fluid interfaces using modern CSS Flexbox and Grid
+                  that scale effortlessly from compact mobile viewports to wide
+                  desktop monitors.
+                </p>
+              </div>
+
+              <!-- Card 3: Practical Projects -->
+              <div class="info-card reveal">
+                <div class="info-card-icon">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h3 class="info-card-title">Practical Projects</h3>
+                <p class="info-card-desc">
+                  Prioritizing real, tangible builds over passive tutorials.
+                  Writing real code, testing user flows, and deploying to public
+                  URLs you can inspect.
+                </p>
+              </div>
+
+              <!-- Card 4: Continuous Learning -->
+              <div class="info-card reveal">
+                <div class="info-card-icon">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                </div>
+                <h3 class="info-card-title">Continuous Learning</h3>
+                <p class="info-card-desc">
+                  Dedicated daily habits of code practice, documentation review,
+                  and leveling up in JavaScript ES6+, asynchronous patterns, and
+                  frontend best practices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================= -->
+      <!-- D. SKILLS SECTION -->
+      <!-- ======================================================================= -->
+      <section class="section-padding" id="skills">
+        <div class="container">
+          <div class="section-header text-center reveal">
+            <span class="section-badge">TECHNICAL EXPERTISE</span>
+            <h2 class="section-heading">My Skills & Focus Areas</h2>
+            <p class="section-subheading">
+              An honest representation of my current technical foundation and
+              active areas of growth.
+            </p>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill Card 1: HTML5 -->
+            <div class="skill-card reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper html-theme">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-core"
+                  >Core Foundation</span
+                >
+              </div>
+
+              <h3 class="skill-name">HTML5</h3>
+              <p class="skill-description">
+                Semantic structure and accessible content. Clean document
+                outlines, proper landmark elements, accessible forms, and
+                SEO-friendly markup.
+              </p>
+
+              <ul class="skill-highlights">
+                <li><span>✓</span> Semantic tags & DOM hierarchy</li>
+                <li><span>✓</span> Accessibility & screen reader support</li>
+                <li><span>✓</span> Forms, validation & input controls</li>
+              </ul>
+            </div>
+
+            <!-- Skill Card 2: CSS3 -->
+            <div class="skill-card reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper css-theme">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="3"
+                      y="3"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-core"
+                  >Core Foundation</span
+                >
+              </div>
+
+              <h3 class="skill-name">CSS3</h3>
+              <p class="skill-description">
+                Flexbox, Grid, responsive layouts, and animations. Custom
+                properties, smooth transitions, mobile-first design, and modern
+                dark UI aesthetics.
+              </p>
+
+              <ul class="skill-highlights">
+                <li><span>✓</span> CSS Flexbox & CSS Grid systems</li>
+                <li><span>✓</span> Responsive media queries & fluid units</li>
+                <li>
+                  <span>✓</span> Transitions, micro-interactions & variables
+                </li>
+              </ul>
+            </div>
+
+            <!-- Skill Card 3: JavaScript -->
+            <div class="skill-card reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper js-theme">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon
+                      points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                    ></polygon>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-learning">
+                  <span class="pulse-dot-inline"></span> Actively Strengthening
+                </span>
+              </div>
+
+              <h3 class="skill-name">JavaScript</h3>
+              <p class="skill-description">
+                DOM manipulation and interactive interfaces. Event handling,
+                asynchronous operations, array methods, and building dynamic
+                browser functionality.
+              </p>
+
+              <ul class="skill-highlights">
+                <li><span>✓</span> DOM traversal, selection & mutation</li>
+                <li><span>✓</span> Event listeners, state toggles & logic</li>
+                <li>
+                  <span>⚡</span> Currently diving deeper into async/fetch &
+                  ES6+
+                </li>
+              </ul>
+            </div>
+
+            <!-- Skill Card 4: Git & GitHub -->
+            <div class="skill-card reveal">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper git-theme">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="6" y1="3" x2="6" y2="15"></line>
+                    <circle cx="18" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M18 9a9 9 0 0 1-9 9"></path>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-core"
+                  >Workflow & Tools</span
+                >
+              </div>
+
+              <h3 class="skill-name">Git & GitHub</h3>
+              <p class="skill-description">
+                Version control and project collaboration. Tracking changes,
+                managing commits, branching, repository management, and
+                deploying through Git.
+              </p>
+
+              <ul class="skill-highlights">
+                <li><span>✓</span> Git commands (add, commit, push, pull)</li>
+                <li><span>✓</span> GitHub repository hosting & versioning</li>
+                <li><span>✓</span> Deployment workflows (e.g., Vercel)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Additional Supporting Tools Bar -->
+          <div class="tools-bar reveal">
+            <span class="tools-bar-label"
+              >Working Workflow & Environments:</span
+            >
+            <div class="tool-tags">
+              <span class="tool-tag">VS Code</span>
+              <span class="tool-tag">Chrome DevTools</span>
+              <span class="tool-tag">Responsive Design Testing</span>
+              <span class="tool-tag">Vercel Deployment</span>
+              <span class="tool-tag">Clean Code Practices</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================= -->
+      <!-- E. FEATURED PROJECTS -->
+      <!-- ======================================================================= -->
+      <section class="section-padding bg-secondary" id="projects">
+        <div class="container">
+          <div class="section-header text-center reveal">
+            <span class="section-badge">PORTFOLIO</span>
+            <h2 class="section-heading">Featured Projects</h2>
+            <p class="section-subheading">
+              Practical web projects demonstrating responsive layout skills,
+              user interfaces, and clean code.
+            </p>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: STB RECHARGE -->
+            <article class="project-card reveal" aria-labelledby="proj1-title">
+              <div class="project-preview">
+                <!-- Interactive Mockup Browser Frame -->
+                <div class="browser-frame">
+                  <div class="browser-header">
+                    <div class="browser-dots">
+                      <span></span><span></span><span></span>
                     </div>
-                    <div class="mockup-body">
-                      <div class="mock-card">
-                        <div class="mock-card-header">
-                          <span class="mock-label">Subscriber ID: #STB-88421</span>
-                          <span class="mock-badge">Active</span>
-                        </div>
-                        <div class="mock-balance">Plan: HD Premium Pack</div>
-                        <div class="mock-progress">
-                          <div class="mock-progress-bar"></div>
-                        </div>
-                        <div class="mock-footer">
-                          <span>Validity: 28 Days Remaining</span>
-                          <span class="mock-btn-mini">Quick Recharge</span>
+                    <div class="browser-url">
+                      <svg
+                        class="icon icon-xs"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <rect
+                          x="3"
+                          y="11"
+                          width="18"
+                          height="11"
+                          rx="2"
+                          ry="2"
+                        ></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      <span>stb-recharge-frontend.vercel.app</span>
+                    </div>
+                  </div>
+
+                  <!-- Custom Styled CSS Preview of STB Recharge Portal -->
+                  <div class="browser-viewport stb-theme-bg">
+                    <div class="mockup-content">
+                      <div class="mockup-nav">
+                        <span class="mock-brand">STB Recharge Hub</span>
+                        <span class="mock-status">Live Preview</span>
+                      </div>
+                      <div class="mockup-body">
+                        <div class="mock-card">
+                          <div class="mock-card-header">
+                            <span class="mock-label"
+                              >Subscriber ID: #STB-88421</span
+                            >
+                            <span class="mock-badge">Active</span>
+                          </div>
+                          <div class="mock-balance">Plan: HD Premium Pack</div>
+                          <div class="mock-progress">
+                            <div class="mock-progress-bar"></div>
+                          </div>
+                          <div class="mock-footer">
+                            <span>Validity: 28 Days Remaining</span>
+                            <span class="mock-btn-mini">Quick Recharge</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Status Badge Overlay -->
-              <div class="project-status-overlay">
-                <span class="status-badge in-development">
-                  <span class="status-dot-pulse"></span> In Development
-                </span>
-              </div>
-            </div>
-
-            <!-- Project Details -->
-            <div class="project-content">
-              <div class="project-meta-top">
-                <span class="project-type">Web Application Concept</span>
-              </div>
-              <h3 class="project-title" id="proj1-title">STB RECHARGE</h3>
-              <p class="project-desc">
-                A web platform concept for set-top box customers to view account details, submit recharge requests, and track request status. Built with a focus on accessible forms and responsive layouts.
-              </p>
-
-              <!-- Tech Stack Tags -->
-              <div class="project-tech-list" aria-label="Technologies used">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Web UI</span>
-                <span class="tech-tag">Vercel</span>
-              </div>
-
-              <!-- Links -->
-              <div class="project-links">
-                <a href="https://stb-recharge-frontend.vercel.app/" class="btn btn-project-primary" target="_blank" rel="noopener noreferrer">
-                  <span>Live Demo</span>
-                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-                <a href="https://github.com/Kathiravan-4344/stb-recharge-hub" class="btn btn-project-secondary" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <span>Source Code</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: Modern Landing Page -->
-          <article class="project-card reveal" aria-labelledby="proj2-title">
-            <div class="project-preview">
-              <!-- Interactive Mockup Browser Frame -->
-              <div class="browser-frame">
-                <div class="browser-header">
-                  <div class="browser-dots">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="browser-url">
-                    <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                    <span>modern-landing-preview.dev</span>
-                  </div>
-                </div>
-
-                <!-- Custom Styled CSS Preview of Modern Landing Page -->
-                <div class="browser-viewport landing-theme-bg">
-                  <div class="landing-mock-content">
-                    <div class="mock-pill">New Generation SaaS</div>
-                    <div class="mock-hero-title">Elevate Your Digital Experience</div>
-                    <div class="mock-hero-desc">Clean architecture & high-conversion layouts.</div>
-                    <div class="mock-actions">
-                      <span class="mock-btn-accent">Get Started</span>
-                      <span class="mock-btn-ghost">Learn More</span>
-                    </div>
-                    <div class="mock-feature-row">
-                      <div class="mock-feat-box"></div>
-                      <div class="mock-feat-box"></div>
-                      <div class="mock-feat-box"></div>
-                    </div>
-                  </div>
+                <!-- Status Badge Overlay -->
+                <div class="project-status-overlay">
+                  <span class="status-badge in-development">
+                    <span class="status-dot-pulse"></span> In Development
+                  </span>
                 </div>
               </div>
 
-              <!-- Status Badge Overlay -->
-              <div class="project-status-overlay">
-                <span class="status-badge concept-badge">
-                  Concept / Practice Project
-                </span>
+              <!-- Project Details -->
+              <div class="project-content">
+                <div class="project-meta-top">
+                  <span class="project-type">Web Application Concept</span>
+                </div>
+                <h3 class="project-title" id="proj1-title">STB RECHARGE</h3>
+                <p class="project-desc">
+                  A web platform concept for set-top box customers to view
+                  account details, submit recharge requests, and track request
+                  status. Built with a focus on accessible forms and responsive
+                  layouts.
+                </p>
+
+                <!-- Tech Stack Tags -->
+                <div class="project-tech-list" aria-label="Technologies used">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Web UI</span>
+                  <span class="tech-tag">Vercel</span>
+                </div>
+
+                <!-- Links -->
+                <div class="project-links">
+                  <a
+                    href="https://stb-recharge-frontend.vercel.app/"
+                    class="btn btn-project-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Live Demo</span>
+                    <svg
+                      class="icon icon-sm"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://github.com/Kathiravan-4344/stb-recharge-hub"
+                    class="btn btn-project-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      class="icon icon-sm"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      ></path>
+                    </svg>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Modern Landing Page -->
+            <article class="project-card reveal" aria-labelledby="proj2-title">
+              <div class="project-preview">
+                <!-- Interactive Mockup Browser Frame -->
+                <div class="browser-frame">
+                  <div class="browser-header">
+                    <div class="browser-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="browser-url">
+                      <svg
+                        class="icon icon-xs"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <rect
+                          x="3"
+                          y="11"
+                          width="18"
+                          height="11"
+                          rx="2"
+                          ry="2"
+                        ></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      <span>modern-landing-preview.dev</span>
+                    </div>
+                  </div>
+
+                  <!-- Custom Styled CSS Preview of Modern Landing Page -->
+                  <div class="browser-viewport landing-theme-bg">
+                    <div class="landing-mock-content">
+                      <div class="mock-pill">New Generation SaaS</div>
+                      <div class="mock-hero-title">
+                        Elevate Your Digital Experience
+                      </div>
+                      <div class="mock-hero-desc">
+                        Clean architecture & high-conversion layouts.
+                      </div>
+                      <div class="mock-actions">
+                        <span class="mock-btn-accent">Get Started</span>
+                        <span class="mock-btn-ghost">Learn More</span>
+                      </div>
+                      <div class="mock-feature-row">
+                        <div class="mock-feat-box"></div>
+                        <div class="mock-feat-box"></div>
+                        <div class="mock-feat-box"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Status Badge Overlay -->
+                <div class="project-status-overlay">
+                  <span class="status-badge concept-badge">
+                    Concept / Practice Project
+                  </span>
+                </div>
+              </div>
+
+              <!-- Project Details -->
+              <div class="project-content">
+                <div class="project-meta-top">
+                  <span class="project-type">Frontend Interface Concept</span>
+                </div>
+                <h3 class="project-title" id="proj2-title">
+                  Modern Landing Page
+                </h3>
+                <p class="project-desc">
+                  A responsive landing page concept designed with clean
+                  typography, modern layouts, and clear calls to action. Built
+                  to explore responsive design hierarchies and
+                  conversion-focused UI components.
+                </p>
+
+                <!-- Tech Stack Tags -->
+                <div class="project-tech-list" aria-label="Technologies used">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">Responsive Design</span>
+                  <span class="tech-tag">Vanilla JS</span>
+                </div>
+
+                <!-- Links -->
+                <div class="project-links">
+                  <!-- Live Demo trigger button showing an inline preview modal or placeholder notice -->
+                  <button
+                    type="button"
+                    class="btn btn-project-primary btn-preview-modal"
+                    data-project="landing-page"
+                  >
+                    <span>Interactive Preview</span>
+                    <svg
+                      class="icon icon-sm"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                    </svg>
+                  </button>
+                  <a
+                    href="https://github.com/Kathiravan-4344"
+                    class="btn btn-project-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      class="icon icon-sm"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      ></path>
+                    </svg>
+                    <span>GitHub Profile</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================= -->
+      <!-- F. CONTACT SECTION -->
+      <!-- ======================================================================= -->
+      <section class="section-padding" id="contact">
+        <div class="container">
+          <div class="contact-card-wrapper reveal">
+            <div class="contact-inner">
+              <div class="contact-header text-center">
+                <span class="section-badge">GET IN TOUCH</span>
+                <h2 class="section-heading">
+                  Let's Make Something Meaningful.
+                </h2>
+                <p class="contact-description">
+                  Looking for a junior frontend developer, or need a clean
+                  website for your business? I'd love to hear about your
+                  project.
+                </p>
+                <div class="section-divider"></div>
+              </div>
+
+              <!-- Contact Options Grid -->
+              <div class="contact-options-grid">
+                <!-- Option 1: Direct Email -->
+                <!-- USER NOTE: Replace 'kathiravan.developer@example.com' with your actual personal email address -->
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-card-info">
+                    <h3 class="contact-method-title">Email Direct</h3>
+                    <p class="contact-method-text">
+                      Send me a direct message with details about your project
+                      or role.
+                    </p>
+
+                    <div class="contact-button-group">
+                      <!-- mailto link with pre-filled subject as requested -->
+                      <a
+                        href="mailto:kathiravan.developer@example.com?subject=Frontend%20Project%20Inquiry%20-%20Kathiravan%20V."
+                        class="btn btn-primary"
+                        id="emailMeBtn"
+                      >
+                        <span>Email Me</span>
+                        <svg
+                          class="icon icon-sm"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <line x1="22" y1="2" x2="11" y2="13"></line>
+                          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                      </a>
+
+                      <!-- Copy Email Button for quick convenience -->
+                      <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="copyEmailBtn"
+                        data-email="kathiravan.developer@example.com"
+                        aria-label="Copy email address to clipboard"
+                      >
+                        <svg
+                          class="icon icon-sm"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <rect
+                            x="9"
+                            y="9"
+                            width="13"
+                            height="13"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <path
+                            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                          ></path>
+                        </svg>
+                        <span id="copyBtnText">Copy Email</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Option 2: Professional Profiles (GitHub & LinkedIn) -->
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="contact-card-info">
+                    <h3 class="contact-method-title">Profiles & Social</h3>
+                    <p class="contact-method-text">
+                      Review code repositories and connect professionally.
+                    </p>
+
+                    <div class="profile-links-row">
+                      <a
+                        href="https://github.com/Kathiravan-4344"
+                        class="btn btn-secondary profile-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <svg
+                          class="icon icon-sm"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                        <span>GitHub</span>
+                      </a>
+
+                      <!-- USER NOTE: Replace with your actual LinkedIn profile URL -->
+                      <a
+                        href="https://www.linkedin.com/in/kathiravan-v"
+                        class="btn btn-secondary profile-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <svg
+                          class="icon icon-sm"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                          ></path>
+                          <rect x="2" y="9" width="4" height="12"></rect>
+                          <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Availability Note Box -->
+              <div class="availability-callout">
+                <div class="callout-dot"></div>
+                <p>
+                  <strong>Current Status:</strong> Actively preparing for junior
+                  frontend developer interviews and accepting freelance web
+                  projects. Typical reply time is within 24 hours.
+                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <!-- Project Details -->
-            <div class="project-content">
-              <div class="project-meta-top">
-                <span class="project-type">Frontend Interface Concept</span>
-              </div>
-              <h3 class="project-title" id="proj2-title">Modern Landing Page</h3>
-              <p class="project-desc">
-                A responsive landing page concept designed with clean typography, modern layouts, and clear calls to action. Built to explore responsive design hierarchies and conversion-focused UI components.
-              </p>
-
-              <!-- Tech Stack Tags -->
-              <div class="project-tech-list" aria-label="Technologies used">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag">Responsive Design</span>
-                <span class="tech-tag">Vanilla JS</span>
-              </div>
-
-              <!-- Links -->
-              <div class="project-links">
-                <!-- Live Demo trigger button showing an inline preview modal or placeholder notice -->
-                <button type="button" class="btn btn-project-primary btn-preview-modal" data-project="landing-page">
-                  <span>Interactive Preview</span>
-                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                </button>
-                <a href="https://github.com/Kathiravan-4344" class="btn btn-project-secondary" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <span>GitHub Profile</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
+    <!-- ========================================================================= -->
+    <!-- SITE FOOTER -->
+    <!-- ========================================================================= -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo">
+            <span class="logo-symbol">K.</span>
+            <span class="brand-text">KATHIRAVAN V.</span>
+          </a>
+          <p class="footer-subtext">
+            Frontend Developer | Building modern, responsive websites for the
+            web.
+          </p>
         </div>
 
+        <div class="footer-center">
+          <p class="designed-by">
+            Designed &amp; Built by <strong>Kathiravan V.</strong>
+          </p>
+          <p class="copyright">
+            &copy; <span id="currentYear">2026</span> All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- ======================================================================= -->
-    <!-- F. CONTACT SECTION -->
-    <!-- ======================================================================= -->
-    <section class="section-padding" id="contact">
-      <div class="container">
-        
-        <div class="contact-card-wrapper reveal">
-          <div class="contact-inner">
-            
-            <div class="contact-header text-center">
-              <span class="section-badge">GET IN TOUCH</span>
-              <h2 class="section-heading">Let's Make Something Meaningful.</h2>
-              <p class="contact-description">
-                Looking for a junior frontend developer, or need a clean website for your business? I'd love to hear about your project.
-              </p>
-              <div class="section-divider"></div>
-            </div>
+    <!-- ========================================================================= -->
+    <!-- G. BACK-TO-TOP BUTTON -->
+    <!-- ========================================================================= -->
+    <button
+      type="button"
+      class="back-to-top"
+      id="backToTop"
+      aria-label="Back to top of page"
+      title="Back to top"
+    >
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
 
-            <!-- Contact Options Grid -->
-            <div class="contact-options-grid">
-              
-              <!-- Option 1: Direct Email -->
-              <!-- USER NOTE: Replace 'kathiravan.developer@example.com' with your actual personal email address -->
-              <div class="contact-card">
-                <div class="contact-card-icon">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <div class="contact-card-info">
-                  <h3 class="contact-method-title">Email Direct</h3>
-                  <p class="contact-method-text">Send me a direct message with details about your project or role.</p>
-                  
-                  <div class="contact-button-group">
-                    <!-- mailto link with pre-filled subject as requested -->
-                    <a href="mailto:kathiravan.developer@example.com?subject=Frontend%20Project%20Inquiry%20-%20Kathiravan%20V." class="btn btn-primary" id="emailMeBtn">
-                      <span>Email Me</span>
-                      <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                    </a>
-                    
-                    <!-- Copy Email Button for quick convenience -->
-                    <button type="button" class="btn btn-outline" id="copyEmailBtn" data-email="kathiravan.developer@example.com" aria-label="Copy email address to clipboard">
-                      <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                      <span id="copyBtnText">Copy Email</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
+    <!-- Notification Toast (for Copy Email feedback) -->
+    <div
+      class="toast-notification"
+      id="toastNotification"
+      role="alert"
+      aria-live="polite"
+    >
+      <svg
+        class="icon icon-sm"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span id="toastMessage">Email address copied to clipboard!</span>
+    </div>
 
-              <!-- Option 2: Professional Profiles (GitHub & LinkedIn) -->
-              <div class="contact-card">
-                <div class="contact-card-icon">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                </div>
-                <div class="contact-card-info">
-                  <h3 class="contact-method-title">Profiles & Social</h3>
-                  <p class="contact-method-text">Review code repositories and connect professionally.</p>
-                  
-                  <div class="profile-links-row">
-                    <a href="https://github.com/Kathiravan-4344" class="btn btn-secondary profile-btn" target="_blank" rel="noopener noreferrer">
-                      <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                      <span>GitHub</span>
-                    </a>
-                    
-                    <!-- USER NOTE: Replace with your actual LinkedIn profile URL -->
-                    <a href="https://www.linkedin.com/in/kathiravan-v" class="btn btn-secondary profile-btn" target="_blank" rel="noopener noreferrer">
-                      <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                      <span>LinkedIn</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Availability Note Box -->
-            <div class="availability-callout">
-              <div class="callout-dot"></div>
+    <!-- Interactive Project Preview Modal (for Concept Project preview) -->
+    <div
+      class="modal-backdrop"
+      id="projectModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalTitle">
+            Modern Landing Page Concept
+          </h3>
+          <button
+            type="button"
+            class="modal-close"
+            id="modalCloseBtn"
+            aria-label="Close modal"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-preview-screen">
+            <div class="preview-hero-mock">
+              <span class="preview-badge">Next Generation Interface</span>
+              <h4>Modern High-Conversion Landing Page</h4>
               <p>
-                <strong>Current Status:</strong> Actively preparing for junior frontend developer interviews and accepting freelance web projects. Typical reply time is within 24 hours.
+                Built with semantic HTML5, pure CSS3 Flexbox/Grid, and
+                responsive breakpoints. Optimized for fast loading and seamless
+                mobile-to-desktop responsiveness.
               </p>
+              <div class="preview-cta-row">
+                <span class="btn btn-primary btn-sm">Explore Features</span>
+                <span class="btn btn-outline btn-sm">Documentation</span>
+              </div>
             </div>
-
+            <div class="preview-cards-mock">
+              <div class="mini-mock-card">
+                <div class="card-bar"></div>
+                <p>Zero Framework Overhead</p>
+              </div>
+              <div class="mini-mock-card">
+                <div class="card-bar"></div>
+                <p>Fluid Typography & Grid</p>
+              </div>
+              <div class="mini-mock-card">
+                <div class="card-bar"></div>
+                <p>Subtle Dark Glow Aesthetics</p>
+              </div>
+            </div>
           </div>
+          <p class="modal-footnote">
+            <em>Note:</em> This is an interactive frontend concept designed and
+            maintained in Kathiravan's project repository. You can view
+            additional practice projects and source code directly on GitHub.
+          </p>
         </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ========================================================================= -->
-  <!-- SITE FOOTER -->
-  <!-- ========================================================================= -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      
-      <div class="footer-brand">
-        <a href="#hero" class="brand-logo footer-logo">
-          <span class="logo-symbol">K.</span>
-          <span class="brand-text">KATHIRAVAN V.</span>
-        </a>
-        <p class="footer-subtext">Frontend Developer | Building modern, responsive websites for the web.</p>
-      </div>
-
-      <div class="footer-center">
-        <p class="designed-by">Designed &amp; Built by <strong>Kathiravan V.</strong></p>
-        <p class="copyright">&copy; <span id="currentYear">2026</span> All rights reserved.</p>
-      </div>
-
-      <div class="footer-nav">
-        <ul class="footer-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- ========================================================================= -->
-  <!-- G. BACK-TO-TOP BUTTON -->
-  <!-- ========================================================================= -->
-  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top of page" title="Back to top">
-    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
-  </button>
-
-  <!-- Notification Toast (for Copy Email feedback) -->
-  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
-    <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-    <span id="toastMessage">Email address copied to clipboard!</span>
-  </div>
-
-  <!-- Interactive Project Preview Modal (for Concept Project preview) -->
-  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h3 class="modal-title" id="modalTitle">Modern Landing Page Concept</h3>
-        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-preview-screen">
-          <div class="preview-hero-mock">
-            <span class="preview-badge">Next Generation Interface</span>
-            <h4>Modern High-Conversion Landing Page</h4>
-            <p>Built with semantic HTML5, pure CSS3 Flexbox/Grid, and responsive breakpoints. Optimized for fast loading and seamless mobile-to-desktop responsiveness.</p>
-            <div class="preview-cta-row">
-              <span class="btn btn-primary btn-sm">Explore Features</span>
-              <span class="btn btn-outline btn-sm">Documentation</span>
-            </div>
-          </div>
-          <div class="preview-cards-mock">
-            <div class="mini-mock-card">
-              <div class="card-bar"></div>
-              <p>Zero Framework Overhead</p>
-            </div>
-            <div class="mini-mock-card">
-              <div class="card-bar"></div>
-              <p>Fluid Typography & Grid</p>
-            </div>
-            <div class="mini-mock-card">
-              <div class="card-bar"></div>
-              <p>Subtle Dark Glow Aesthetics</p>
-            </div>
-          </div>
+        <div class="modal-footer">
+          <a
+            href="https://github.com/Kathiravan-4344"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            <span>View on GitHub</span>
+            <svg
+              class="icon icon-sm"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <button
+            type="button"
+            class="btn btn-outline"
+            id="modalCloseActionBtn"
+          >
+            Close Preview
+          </button>
         </div>
-        <p class="modal-footnote">
-          <em>Note:</em> This is an interactive frontend concept designed and maintained in Kathiravan's project repository. You can view additional practice projects and source code directly on GitHub.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <a href="https://github.com/Kathiravan-4344" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          <span>View on GitHub</span>
-          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-        </a>
-        <button type="button" class="btn btn-outline" id="modalCloseActionBtn">Close Preview</button>
       </div>
     </div>
-  </div>
 
-  <!-- Main JavaScript File -->
-  <script src="script.js"></script>
-</body>
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+  </body>
 </html>
